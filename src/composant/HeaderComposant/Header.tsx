@@ -18,7 +18,7 @@ export default function Header() {
           <h1 className="text-primary font-bold  text-4xl">Logo</h1>
           <Menu>
             <MenuButton
-              className="text-secondary p-2 rounded-full px-4 font-semibold hover:bg-primary hover:bg-opacity-10"
+              className="text-primary p-2 rounded-full px-4 font-semibold hover:bg-secondary hover:text-three"
               rigthicon={<ChevronDown />}
             >
               Theme

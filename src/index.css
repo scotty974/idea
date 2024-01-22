@@ -4,11 +4,17 @@
 
 body{
     font-family: 'Jost', sans-serif;
-    background-color: #011342 !important;
+    background-color: #f4d1d8 !important;
 }
 
 #menu-list-\:r1\:{
-    background-color: #011342 !important;
+    background-color: #f4d1d8 !important;
     border: none;
-    box-shadow: #10768D 0 0 5px 0;
+    box-shadow: #f4adb9 0 0 5px 0;
+}
+
+input {
+    all: unset;
+    border: none;   
+
 }
