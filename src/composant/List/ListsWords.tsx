@@ -11,9 +11,12 @@ export default function ListWords({ word }: any) {
   }, [word]);
   return (
     <>
-      {wordsArray.map((item, index) => (
+    <section className="flex flex-wrap">
+    {wordsArray.map((item, index) => (
         <span key={index} className="mr-4 text-primary font-semibold text-3xl">{item}</span>
       ))}
+    </section>
+     
     </>
   );
 }
