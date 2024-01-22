@@ -1,15 +1,20 @@
 import { useState } from "react";
 import Form from "./form.interface";
-export default function InputWords() {
+import Props from "./props.interface";
+
+export default function InputWords({getWords} : Props) {
   const [words, setWords] = useState<Form>();
 
   const handleChange = (e: any) => {
     setWords({ value: e.target.value });
+    
   };
 
   const handleSubmit = (event:any) => {
     event.preventDefault()
+    getWords(words?.value)
     setWords({value : ''})
+    
   }
   return (
     <>
