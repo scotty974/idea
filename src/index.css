@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body{
-    font-family: 'Gluten', cursive;
+    font-family: 'Jost', sans-serif;
+    background-color: #012E40;
 }
