@@ -6,3 +6,9 @@ body{
     font-family: 'Jost', sans-serif;
     background-color: #011342 !important;
 }
+
+#menu-list-\:r1\:{
+    background-color: #011342 !important;
+    border: none;
+    box-shadow: #10768D 0 0 5px 0;
+}

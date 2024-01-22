@@ -23,7 +23,7 @@ export default function Header() {
             >
               Theme
             </MenuButton>
-            <MenuList>
+            <MenuList  >
               <div className="flex px-2 justify-start">
                 <span className="w-5 h-5 bg-black rounded-full mr-2"></span>
               </div>
