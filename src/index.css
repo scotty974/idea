@@ -4,16 +4,14 @@
 
 body{
     font-family: 'Jost', sans-serif;
-    
-   
+    background-color: #0f172a;
 }
-.chakra-ui-light{
-    background-color: #f4d1d8 ;
-}
+
 #menu-list-\:r1\:{
-    
     border: none;
-   
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: #0f172a 0px 0px 5px 0px;
 }
 
 input {
