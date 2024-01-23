@@ -13,7 +13,7 @@ import {
 import data from "../../theme.js";
 import { useState, useEffect } from "react";
 import { useColorContext } from "../../context/ColorContext.js";
-import { HelpCircle } from "lucide-react";
+import { HelpCircle,Palette  } from "lucide-react";
 
 export default function Header() {
   const { changeColor } = useColorContext();
@@ -57,7 +57,8 @@ export default function Header() {
     <>
       <header className="my-2">
         <nav className={`flex items-center justify-between ${textClass}`}>
-          <h1 className="font-bold text-4xl">Logo</h1>
+          
+          <Palette size={60}/>
           <div className="flex items-center">
             <Menu>
               <MenuButton
