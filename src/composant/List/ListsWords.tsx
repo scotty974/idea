@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { useColorMode } from "@chakra-ui/react";
+
 import { useColorContext } from "../../context/ColorContext";
 export default function ListWords({ word }: any) {
   const {currentColor} = useColorContext()
-  const { colorMode } = useColorMode();
-  const textClassName = colorMode === "light" ? "text-primary" : "text-white";
+  
+ 
 
   const [wordsArray, setWordsArray] = useState<string[]>([]);
 
