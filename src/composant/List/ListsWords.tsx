@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
-
+import { useColorMode } from "@chakra-ui/react";
 export default function ListWords({ word }: any) {
+  const { colorMode } = useColorMode();
+  const textClassName = colorMode === "light" ? "text-primary" : "text-white";
+
   const [wordsArray, setWordsArray] = useState<string[]>([]);
 
   useEffect(() => {
@@ -15,7 +18,7 @@ export default function ListWords({ word }: any) {
         {wordsArray.map((item, index) => (
           <span
             key={index}
-            className="mr-4 text-primary font-semibold text-3xl"
+            className={`mr-4  font-semibold text-3xl ${textClassName}`}
           >
             {item}
           </span>
