@@ -40,7 +40,8 @@
         "background": "bg-gray-800",
         "text": "text-gray-300",
         "hoverBackground": "hover:bg-gray-700",
-        "hoverText": "hover:text-gray-100"
+        "hoverText": "hover:text-gray-100",
+        "isDefault" : true
       },
       {
         "name": "Dark Orange",

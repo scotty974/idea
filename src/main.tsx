@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import {ChakraProvider} from '@chakra-ui/react'
+import { ColorProvider } from "./context/ColorContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  
+    <ColorProvider>
     <App />
- 
+    </ColorProvider>
 );

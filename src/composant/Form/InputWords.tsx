@@ -1,12 +1,10 @@
 import { useState } from "react";
 import Form from "./form.interface";
 import Props from "./props.interface";
-import { useColorMode } from "@chakra-ui/react";
+import { useColorContext } from "../../context/ColorContext";
+
 export default function InputWords({ getWords }: Props) {
-  const { colorMode } = useColorMode();
-  const textClassName = colorMode === "light" ? "text-primary" : "text-white";
-  const hoverBgClassName =
-    colorMode === "light" ? "hover:bg-secondary" : "hover:bg-slate-900";
+  const { currentColor } = useColorContext(); // Utilisez useContext avec useColorContext
 
   const [words, setWords] = useState<Form>();
 
@@ -19,6 +17,7 @@ export default function InputWords({ getWords }: Props) {
     getWords(words?.value);
     setWords({ value: "" });
   };
+console.log(currentColor)
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -26,7 +25,7 @@ export default function InputWords({ getWords }: Props) {
           type="text"
           name="text"
           id="text"
-          className={`my-16 py-4 px-2 w-full focus:outline-none text-4xl  font-bold  hover:cursor-pointer hover:bg-opacity-20 ${textClassName} ${hoverBgClassName}`}
+          className={`my-16 py-4 px-2 w-full focus:outline-none text-4xl font-bold hover:cursor-pointer  ${currentColor.text} ${currentColor.hoverBackground}`}
           autoFocus
           value={words?.value}
           onChange={handleChange}
